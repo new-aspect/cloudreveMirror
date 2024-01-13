@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "cloudreveMirror/routers"
 
 func main() {
-	fmt.Println("test")
+	r := routers.InitRouter()
+
+	r.Run(":5001")
 }
